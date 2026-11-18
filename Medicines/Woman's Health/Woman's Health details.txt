@@ -1,0 +1,41 @@
+1.
+
+Name: Folic Acid 400 mcg Tablets
+Category: Woman's Health
+Dosage: 1 tablet once daily
+Expire Date: 2027-06-30
+
+2.
+
+Name: Ferrous Sulfate 200 mg Tablets
+Category: Woman's Health
+Dosage: 1 tablet once daily
+Expire Date: 2027-08-31
+
+3.
+
+Name: Calcium Carbonate 500 mg Tablets
+Category: Woman's Health
+Dosage: 1 tablet once daily
+Expire Date: 2028-01-31
+
+4.
+
+Name: Ferrous Fumarate + Folic Acid Tablets
+Category: Woman's Health
+Dosage: 1 tablet once daily
+Expire Date: 2027-10-31
+
+5.
+
+Name: Levonorgestrel 1.5 mg Tablet
+Category: Woman's Health
+Dosage: Take 1 tablet as directed for emergency contraception
+Expire Date: 2027-12-31
+
+6.
+
+Name: Vitamin D3 1000 IU Tablets
+Category: Woman's Health
+Dosage: 1 tablet once daily
+Expire Date: 2028-02-28

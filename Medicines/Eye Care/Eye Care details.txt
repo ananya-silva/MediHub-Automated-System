@@ -1,0 +1,41 @@
+1. Carboxymethylcellulose Eye Drops
+
+Name: Carboxymethylcellulose 1% Eye Drops
+Category: Eye Care
+Dosage: 1 drop in the affected eye(s), as needed
+Expire Date: 2027-06-30
+
+2. Moxifloxacin Eye Drops
+
+Name: Moxifloxacin Hydrochloride 0.5% Eye Drops
+Category: Eye Care
+Dosage: 1 drop in the affected eye, 3–4 times daily
+Expire Date: 2027-08-31
+
+3. Chloramphenicol Eye Drops
+
+Name: Chloramphenicol 0.5% Eye Drops
+Category: Eye Care
+Dosage: 1 drop every 2 hours initially, then every 4 hours
+Expire Date: 2027-05-31
+
+4. Gentamicin Eye Drops
+
+Name: Gentamicin 0.3% Eye Drops
+Category: Eye Care
+Dosage: 1–2 drops in the affected eye, 3–4 times daily
+Expire Date: 2027-09-30
+
+5. Brinzolamide Eye Drops
+
+Name: Brinzolamide 1% Eye Drops
+Category: Eye Care
+Dosage: 1 drop in the affected eye, 3 times daily
+Expire Date: 2028-01-31
+
+6. Prednisolone Acetate Eye Drops
+
+Name: Prednisolone Acetate 1% Eye Drops
+Category: Eye Care
+Dosage: 1–2 drops in the affected eye, 2–4 times daily
+Expire Date: 2027-11-30

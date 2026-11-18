@@ -1,0 +1,895 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: Georgia, serif;
+  
+    color: #222;
+  
+    background-color: white;
+  }
+  
+  
+  /* =========================================
+     HEADER
+  ========================================= */
+  
+  .main-header {
+    width: 100%;
+  
+    background-color: #299d82;
+  
+    color: white;
+  }
+  
+  
+  /* =========================================
+     HEADER TOP
+  ========================================= */
+  
+  .header-top {
+    width: 100%;
+  
+    height: 85px;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: space-between;
+  
+    padding: 8px 50px;
+  
+    position: relative;
+  }
+  
+  
+  /* =========================================
+     LOGO
+  ========================================= */
+  
+  .logo-area {
+    width: 90px;
+  
+    height: 75px;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  }
+  
+  .logo-area img {
+    width: 70px;
+  
+    height: 70px;
+  
+    object-fit: contain;
+  }
+  
+  
+  /* =========================================
+     WEBSITE NAME
+  ========================================= */
+  
+  .brand-name {
+    position: absolute;
+  
+    left: 50%;
+  
+    top: 25px;
+  
+    transform: translateX(-50%);
+  }
+  
+  .brand-name h1 {
+    margin: 0;
+  
+    color: white;
+  
+    font-size: 34px;
+  
+    font-weight: normal;
+  }
+  
+  
+  /* =========================================
+     HEADER ACTIONS
+  ========================================= */
+  
+  .header-actions {
+    display: flex;
+  
+    align-items: center;
+  
+    gap: 15px;
+  }
+  
+  
+  /* Login */
+  
+  .login-btn {
+    display: inline-block;
+  
+    padding: 5px 19px;
+  
+    border: 1px solid white;
+  
+    border-radius: 20px;
+  
+    color: white;
+  
+    text-decoration: none;
+  
+    font-size: 15px;
+  
+    transition: 0.3s;
+  }
+  
+  .login-btn:hover {
+    background-color: white;
+  
+    color: #299d82;
+  }
+  
+  
+  /* Cart */
+  
+  .cart-icon {
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    color: white;
+  
+    text-decoration: none;
+  
+    font-size: 28px;
+  
+    transition: 0.3s;
+  }
+  
+  .cart-icon:hover {
+    color: #e8f7f2;
+  }
+  
+  
+  /* =========================================
+     NAVIGATION
+  ========================================= */
+  
+  .navigation {
+    width: 100%;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    gap: 12px;
+  
+    padding: 5px 0 10px 92px;
+  }
+  
+  .navigation a {
+    color: white;
+  
+    text-decoration: none;
+  
+    font-size: 15px;
+  }
+  
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+  
+  .navigation span {
+    color: white;
+  }
+  
+  
+  /* =========================================
+     LOGIN SECTION
+  ========================================= */
+  
+  .login-section {
+    width: 100%;
+  
+    background-color: white;
+  
+    padding: 45px 15px 55px;
+  
+    min-height: 480px;
+  
+    display: flex;
+  
+    align-items: flex-start;
+  
+    justify-content: center;
+  }
+  
+  
+  /* =========================================
+     LOGIN WRAPPER
+  ========================================= */
+  
+  .login-wrapper {
+    width: 100%;
+  
+    max-width: 700px;
+  
+    margin: 0 auto;
+  
+    text-align: center;
+  }
+  
+  
+  /* =========================================
+     LOGIN TITLE
+  ========================================= */
+  
+  .login-wrapper h2 {
+    margin: 0 0 12px;
+  
+    color: #299d82;
+  
+    font-size: 28px;
+  
+    font-weight: 700;
+  }
+  
+  .welcome-text {
+    margin: 0 0 30px;
+  
+    color: #555;
+  
+    font-size: 15px;
+  }
+  
+  
+  /* =========================================
+     FORM
+  ========================================= */
+  
+  .login-wrapper form {
+    width: 100%;
+  }
+  
+  
+  /* =========================================
+     FORM ROW
+  ========================================= */
+  
+  .login-wrapper .form-row {
+    width: 100%;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Labels */
+  
+  .login-wrapper .form-row label {
+    width: 180px;
+  
+    margin-right: 15px;
+  
+    text-align: right;
+  
+    color: #222;
+  
+    font-size: 14px;
+  
+    font-weight: 700;
+  }
+  
+  
+  /* =========================================
+     INPUT
+  ========================================= */
+  
+  .login-wrapper .form-control {
+    width: 280px;
+  
+    height: 40px;
+  
+    padding: 7px 12px;
+  
+    border: 1px solid #ccc;
+  
+    border-radius: 8px;
+  
+    background-color: white;
+  
+    color: #222;
+  
+    font-family: Georgia, serif;
+  
+    font-size: 14px;
+  
+    outline: none;
+  
+    box-shadow: none;
+  
+    transition: 0.3s;
+  }
+  
+  
+  /* Input focus */
+  
+  .login-wrapper .form-control:focus {
+    border-color: #299d82;
+  
+    box-shadow:
+      0 0 0 2px rgba(41, 157, 130, 0.15);
+  }
+  
+  
+  /* =========================================
+     PASSWORD
+  ========================================= */
+  
+  .login-wrapper .password-box {
+    position: relative;
+  
+    width: 280px;
+  }
+  
+  
+  .login-wrapper .password-box .form-control {
+    width: 100%;
+  
+    padding-right: 40px;
+  }
+  
+  
+  /* Password Eye */
+  
+  .login-wrapper .password-icon {
+    position: absolute;
+  
+    right: 12px;
+  
+    top: 50%;
+  
+    transform: translateY(-50%);
+  
+    color: #777;
+  
+    font-size: 13px;
+  
+    cursor: pointer;
+  
+    transition: 0.3s;
+  }
+  
+  .login-wrapper .password-icon:hover {
+    color: #299d82;
+  }
+  
+  
+  /* =========================================
+     FORGOT PASSWORD
+  ========================================= */
+  
+  .login-wrapper .forgot-password {
+    width: 475px;
+  
+    max-width: 100%;
+  
+    margin: 0 auto 22px;
+  
+    text-align: right;
+  }
+  
+  .login-wrapper .forgot-password a {
+    color: #222;
+  
+    font-size: 12px;
+  
+    text-decoration: underline;
+  
+    transition: 0.3s;
+  }
+  
+  .login-wrapper .forgot-password a:hover {
+    color: #299d82;
+  }
+  
+  
+  /* =========================================
+     LOGIN BUTTON
+  ========================================= */
+  
+  .login-wrapper .submit-btn {
+    padding: 8px 28px;
+  
+    border: 1px solid #299d82;
+  
+    border-radius: 20px;
+  
+    background-color: #299d82;
+  
+    color: white;
+  
+    font-family: Georgia, serif;
+  
+    font-size: 14px;
+  
+    font-weight: 600;
+  
+    cursor: pointer;
+  
+    transition: 0.3s;
+  }
+  
+  .login-wrapper .submit-btn:hover {
+    background-color: #21866f;
+  
+    border-color: #21866f;
+  
+    color: white;
+  }
+  
+  
+  /* =========================================
+     ACCOUNT TEXT
+  ========================================= */
+  
+  .login-wrapper .account-text {
+    margin: 20px 0 0;
+  
+    color: #555;
+  
+    font-size: 13px;
+  }
+  
+  .login-wrapper .account-text a {
+    margin-left: 5px;
+  
+    color: #299d82;
+  
+    font-weight: 700;
+  
+    text-decoration: underline;
+  
+    transition: 0.3s;
+  }
+  
+  .login-wrapper .account-text a:hover {
+    color: #21866f;
+  }
+  
+  
+  /* =========================================
+     FOOTER
+  ========================================= */
+  
+  .footer {
+    width: 100%;
+  
+    background-color: #299d82;
+  
+    color: white;
+  }
+  
+  .footer-content {
+    width: 100%;
+  
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    gap: 0;
+  
+    padding: 18px 30px;
+  }
+  
+  .footer-column {
+    min-height: 75px;
+  
+    padding: 0 25px;
+  
+    border-left: 1px solid white;
+  }
+  
+  .footer-column:first-child {
+    border-left: none;
+  }
+  
+  .footer-column p {
+    margin: 2px 0;
+  
+    font-size: 13px;
+  
+    line-height: 1.5;
+  }
+  
+  
+  /* =========================================
+     FOOTER ADDRESS
+  ========================================= */
+  
+  .address {
+    display: flex;
+  
+    align-items: center;
+  
+    gap: 12px;
+  }
+  
+  .address img {
+    width: 60px;
+  
+    height: 60px;
+  
+    object-fit: contain;
+  }
+  
+  
+  /* =========================================
+     COPYRIGHT
+  ========================================= */
+  
+  .copyright {
+    width: 100%;
+  
+    padding: 8px 10px 14px;
+  
+    text-align: center;
+  
+    font-size: 13px;
+  }
+  
+  
+  /* =========================================
+     TABLET
+  ========================================= */
+  
+  @media screen and (max-width: 991px) {
+  
+    .header-top {
+      padding: 8px 25px;
+    }
+  
+    .navigation {
+      padding-left: 30px;
+    }
+  
+    .login-section {
+      padding: 40px 20px 50px;
+    }
+  
+    .login-wrapper .form-row label {
+      width: 160px;
+    }
+  
+  }
+  
+  
+  /* =========================================
+     MOBILE
+  ========================================= */
+  
+  @media screen and (max-width: 767px) {
+  
+    /* Header */
+  
+    .header-top {
+      height: auto;
+  
+      min-height: 80px;
+  
+      padding: 8px 15px;
+    }
+  
+    .logo-area {
+      width: 60px;
+  
+      height: 60px;
+    }
+  
+    .logo-area img {
+      width: 55px;
+  
+      height: 55px;
+    }
+  
+    .brand-name {
+      position: static;
+  
+      transform: none;
+  
+      margin-left: auto;
+  
+      margin-right: auto;
+    }
+  
+    .brand-name h1 {
+      font-size: 25px;
+    }
+  
+    .header-actions {
+      gap: 8px;
+    }
+  
+    .login-btn {
+      padding: 5px 9px;
+  
+      font-size: 11px;
+    }
+  
+    .cart-icon {
+      font-size: 21px;
+    }
+  
+  
+    /* Navigation */
+  
+    .navigation {
+      justify-content: center;
+  
+      flex-wrap: wrap;
+  
+      padding: 5px 10px 10px;
+  
+      gap: 6px;
+    }
+  
+    .navigation a {
+      font-size: 12px;
+    }
+  
+  
+    /* Login */
+  
+    .login-section {
+      padding: 35px 15px 45px;
+  
+      min-height: 420px;
+    }
+  
+    .login-wrapper {
+      width: 100%;
+    }
+  
+    .login-wrapper h2 {
+      font-size: 25px;
+    }
+  
+    .welcome-text {
+      font-size: 14px;
+  
+      margin-bottom: 25px;
+    }
+  
+  
+    /* Form */
+  
+    .login-wrapper .form-row {
+      flex-direction: column;
+  
+      align-items: center;
+  
+      margin-bottom: 18px;
+    }
+  
+    .login-wrapper .form-row label {
+      width: 100%;
+  
+      margin-right: 0;
+  
+      margin-bottom: 7px;
+  
+      text-align: center;
+  
+      font-size: 14px;
+    }
+  
+    .login-wrapper .form-control,
+    .login-wrapper .password-box {
+      width: 100%;
+  
+      max-width: 320px;
+    }
+  
+  
+    /* Forgot Password */
+  
+    .login-wrapper .forgot-password {
+      width: 100%;
+  
+      max-width: 320px;
+  
+      margin-bottom: 20px;
+    }
+  
+  
+    /* Button */
+  
+    .login-wrapper .submit-btn {
+      padding: 8px 25px;
+  
+      font-size: 13px;
+    }
+  
+  
+    /* Account */
+  
+    .login-wrapper .account-text {
+      font-size: 12px;
+  
+      margin-top: 18px;
+    }
+  
+  
+    /* Footer */
+  
+    .footer-content {
+      flex-wrap: wrap;
+    }
+  
+  }
+  
+  
+  /* =========================================
+     SMALL MOBILE
+  ========================================= */
+  
+  @media screen and (max-width: 500px) {
+  
+    .header-top {
+      height: auto;
+  
+      min-height: 80px;
+  
+      padding: 8px 15px;
+    }
+  
+    .logo-area {
+      width: 60px;
+  
+      height: 60px;
+    }
+  
+    .logo-area img {
+      width: 55px;
+  
+      height: 55px;
+    }
+  
+    .brand-name {
+      position: static;
+  
+      transform: none;
+  
+      margin-left: auto;
+  
+      margin-right: auto;
+    }
+  
+    .brand-name h1 {
+      font-size: 22px;
+    }
+  
+    .header-actions {
+      gap: 8px;
+    }
+  
+    .login-btn {
+      padding: 4px 7px;
+  
+      font-size: 10px;
+    }
+  
+    .cart-icon {
+      font-size: 19px;
+    }
+  
+    .navigation {
+      justify-content: center;
+  
+      flex-wrap: wrap;
+  
+      padding: 5px 10px 10px;
+  
+      gap: 6px;
+    }
+  
+    .navigation a {
+      font-size: 11px;
+    }
+  
+  
+    /* Login */
+  
+    .login-section {
+      padding: 30px 10px 40px;
+  
+      min-height: 400px;
+    }
+  
+    .login-wrapper h2 {
+      font-size: 23px;
+    }
+  
+    .welcome-text {
+      font-size: 13px;
+    }
+  
+    .login-wrapper .form-control,
+    .login-wrapper .password-box {
+      max-width: 280px;
+    }
+  
+    .login-wrapper .forgot-password {
+      max-width: 280px;
+    }
+  
+    .login-wrapper .form-control {
+      height: 38px;
+  
+      font-size: 12px;
+    }
+  
+    .login-wrapper .submit-btn {
+      padding: 7px 23px;
+  
+      font-size: 12px;
+    }
+  
+  
+    /* Footer */
+  
+    .footer-content {
+      flex-direction: column;
+  
+      align-items: flex-start;
+  
+      padding: 15px 20px;
+    }
+  
+    .footer-column {
+      width: 100%;
+  
+      padding: 15px 0;
+  
+      border-left: none;
+  
+      border-top: 1px solid white;
+    }
+  
+    .footer-column:first-child {
+      border-top: none;
+    }
+  
+    .copyright {
+      font-size: 11px;
+    }
+  
+  }
+  

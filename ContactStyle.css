@@ -1,0 +1,1148 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  color: #222;
+
+  background-color: white;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.main-header {
+  width: 100%;
+
+  background-color: #299d82;
+
+  color: white;
+}
+
+
+/* =========================================
+   HEADER TOP
+========================================= */
+
+.header-top {
+  width: 100%;
+
+  height: 85px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 8px 50px;
+
+  position: relative;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo-area {
+  width: 90px;
+
+  height: 75px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.logo-area img {
+  width: 70px;
+
+  height: 70px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   BRAND NAME
+========================================= */
+
+.brand-name {
+  position: absolute;
+
+  left: 50%;
+
+  top: 25px;
+
+  transform: translateX(-50%);
+}
+
+.brand-name h1 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 34px;
+
+  font-weight: normal;
+}
+
+
+/* =========================================
+   HEADER ACTIONS
+========================================= */
+
+.header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+/* Login/Register */
+
+.login-btn {
+  display: inline-block;
+
+  padding: 5px 19px;
+
+  border: 1px solid white;
+
+  border-radius: 20px;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: white;
+
+  color: #299d82;
+}
+
+
+/* Cart */
+
+.cart-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 28px;
+
+  transition: 0.3s;
+}
+
+.cart-icon:hover {
+  color: #e8f7f2;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navigation {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 5px 0 10px 92px;
+}
+
+.navigation a {
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 15px;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.navigation span {
+  color: white;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.contact-hero {
+  width: 100%;
+
+  height: 650px;
+
+  background-image: url("images/contact us.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+
+/* Hero title */
+
+.contact-hero-overlay {
+  position: absolute;
+
+  top: 55px;
+
+  left: 55px;
+
+  width: 320px;
+
+  text-align: center;
+}
+
+.contact-hero-overlay h2 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 34px;
+
+  font-weight: normal;
+
+  line-height: 1.15;
+
+  text-shadow:
+    2px 2px 2px black,
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-section {
+  width: 100%;
+
+  padding: 40px 0 60px;
+
+  background-color: #ffffff;
+}
+
+
+/* Bootstrap-style container */
+
+.contact-section .container {
+  max-width: 1140px;
+}
+
+
+/* =========================================
+   CONTACT CONTAINER
+========================================= */
+
+.contact-container {
+  width: 90%;
+
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 30px;
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contact-info {
+  width: 320px;
+
+  min-height: 210px;
+
+  padding: 18px 20px;
+
+  background-color: white;
+
+  border: 1px solid #e0e0e0;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Contact title */
+
+.contact-info h2 {
+  margin: 0 0 18px;
+
+  text-align: center;
+
+  color: #299d82;
+
+  font-size: 22px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   CONTACT ITEMS
+========================================= */
+
+.contact-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 15px;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Contact icons */
+
+.contact-icon {
+  width: 28px;
+
+  height: 28px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background-color: #e8f7f2;
+
+  border-radius: 50%;
+}
+
+.contact-icon i {
+  color: #299d82;
+
+  font-size: 14px;
+}
+
+
+/* Contact text */
+
+.contact-text {
+  display: block;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+.contact-text strong {
+  display: block;
+
+  margin-bottom: 2px;
+
+  color: #333;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.contact-text span {
+  display: block;
+
+  color: #666;
+
+  font-size: 13px;
+
+  font-weight: normal;
+}
+
+
+/* =========================================
+   INQUIRY FORM
+========================================= */
+
+.inquiry-form {
+  width: 390px;
+
+  min-height: 270px;
+
+  padding: 20px;
+
+  background-color: white;
+
+  border: 1px solid #e0e0e0;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.inquiry-form:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Form title */
+
+.inquiry-form h2 {
+  margin: 0 0 20px;
+
+  text-align: center;
+
+  color: #299d82;
+
+  font-size: 22px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   FORM ROW
+========================================= */
+
+.form-row {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 12px;
+}
+
+
+/* Labels */
+
+.form-row label {
+  width: 75px;
+
+  flex-shrink: 0;
+
+  color: #333;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.form-row input {
+  width: 100%;
+
+  height: 32px;
+
+  padding: 5px 12px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background-color: #f8f8f8;
+
+  color: #222;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 13px;
+
+  transition: 0.3s;
+}
+
+.form-row input:focus {
+  background-color: white;
+
+  border-color: #299d82;
+
+  box-shadow: 0 0 0 2px rgba(41, 157, 130, 0.10);
+}
+
+
+/* Placeholder */
+
+.form-row input::placeholder {
+  color: #999;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.message-row {
+  align-items: flex-start;
+}
+
+.message-row label {
+  padding-top: 8px;
+}
+
+.form-row textarea {
+  width: 100%;
+
+  height: 70px;
+
+  padding: 8px 12px;
+
+  resize: none;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background-color: #f8f8f8;
+
+  color: #222;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 13px;
+
+  transition: 0.3s;
+}
+
+.form-row textarea:focus {
+  background-color: white;
+
+  border-color: #299d82;
+
+  box-shadow: 0 0 0 2px rgba(41, 157, 130, 0.10);
+}
+
+.form-row textarea::placeholder {
+  color: #999;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.contact-submit {
+  display: block;
+
+  width: 120px;
+
+  height: 35px;
+
+  margin: 15px auto 0;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: #299d82;
+
+  color: white;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.contact-submit:hover {
+  background-color: #21866f;
+
+  color: white;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  width: 100%;
+
+  background-color: #299d82;
+
+  color: white;
+}
+
+
+/* Footer content */
+
+.footer-content {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 0;
+
+  padding: 18px 30px;
+}
+
+
+/* Footer columns */
+
+.footer-column {
+  min-height: 75px;
+
+  padding: 0 25px;
+
+  border-left: 1px solid white;
+}
+
+.footer-column:first-child {
+  border-left: none;
+}
+
+
+/* Footer text */
+
+.footer-column p {
+  margin: 2px 0;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* Footer address */
+
+.address {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+/* Footer logo */
+
+.address img {
+  width: 60px;
+
+  height: 60px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
+.copyright {
+  width: 100%;
+
+  padding: 8px 10px 14px;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media screen and (max-width: 991px) {
+
+  .header-top {
+    padding: 8px 25px;
+  }
+
+  .navigation {
+    padding-left: 30px;
+  }
+
+
+  /* Hero */
+
+  .contact-hero-overlay {
+    left: 50px;
+  }
+
+
+  /* Contact */
+
+  .contact-container {
+    width: 95%;
+
+    max-width: 800px;
+
+    gap: 20px;
+  }
+
+  .contact-info {
+    width: 320px;
+  }
+
+  .inquiry-form {
+    width: 390px;
+  }
+
+
+  /* Footer */
+
+  .footer-column {
+    padding: 0 15px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 767px) {
+
+  /* =====================================
+     HEADER
+  ===================================== */
+
+  .header-top {
+    height: auto;
+
+    min-height: 80px;
+
+    padding: 8px 15px;
+  }
+
+  .logo-area {
+    width: 60px;
+
+    height: 60px;
+  }
+
+  .logo-area img {
+    width: 55px;
+
+    height: 55px;
+  }
+
+  .brand-name {
+    position: static;
+
+    transform: none;
+
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  .brand-name h1 {
+    font-size: 25px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .login-btn {
+    padding: 5px 9px;
+
+    font-size: 11px;
+  }
+
+  .cart-icon {
+    font-size: 21px;
+  }
+
+
+  /* =====================================
+     NAVIGATION
+  ===================================== */
+
+  .navigation {
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    padding: 5px 10px 10px;
+
+    gap: 6px;
+  }
+
+  .navigation a {
+    font-size: 12px;
+  }
+
+
+  /* =====================================
+     HERO
+  ===================================== */
+
+  .contact-hero {
+    height: 280px;
+
+    background-position: center;
+  }
+
+  .contact-hero-overlay {
+    top: 30px;
+
+    left: 20px;
+
+    width: 240px;
+  }
+
+  .contact-hero-overlay h2 {
+    font-size: 18px;
+  }
+
+
+  /* =====================================
+     CONTACT SECTION
+  ===================================== */
+
+  .contact-section {
+    padding: 30px 15px 45px;
+  }
+
+  .contact-container {
+    width: 100%;
+
+    max-width: 500px;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+  }
+
+
+  /* =====================================
+     CONTACT INFORMATION
+  ===================================== */
+
+  .contact-info {
+    width: 100%;
+
+    max-width: 380px;
+
+    min-height: 200px;
+
+    padding: 20px;
+  }
+
+  .contact-info h2 {
+    font-size: 21px;
+
+    margin-bottom: 18px;
+  }
+
+  .contact-item {
+    margin-bottom: 14px;
+  }
+
+  .contact-text {
+    font-size: 12px;
+  }
+
+  .contact-text strong {
+    font-size: 13px;
+  }
+
+  .contact-text span {
+    font-size: 12px;
+  }
+
+
+  /* =====================================
+     INQUIRY FORM
+  ===================================== */
+
+  .inquiry-form {
+    width: 100%;
+
+    max-width: 500px;
+
+    min-height: auto;
+
+    padding: 20px;
+  }
+
+  .inquiry-form h2 {
+    font-size: 21px;
+
+    margin-bottom: 20px;
+  }
+
+
+  /* =====================================
+     FOOTER
+  ===================================== */
+
+  .footer-content {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 15px 20px;
+  }
+
+  .footer-column {
+    width: 100%;
+
+    padding: 15px 0;
+
+    border-left: none;
+
+    border-top: 1px solid white;
+  }
+
+  .footer-column:first-child {
+    border-top: none;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================
+   EXTRA SMALL MOBILE
+========================================= */
+
+@media screen and (max-width: 500px) {
+
+  /* Header */
+
+  .brand-name h1 {
+    font-size: 22px;
+  }
+
+  .login-btn {
+    font-size: 10px;
+
+    padding: 4px 7px;
+  }
+
+  .cart-icon {
+    font-size: 19px;
+  }
+
+  .navigation a {
+    font-size: 11px;
+  }
+
+
+  /* =====================================
+     HERO
+  ===================================== */
+
+  .contact-hero {
+    height: 240px;
+  }
+
+  .contact-hero-overlay {
+    left: 20px;
+
+    top: 30px;
+
+    width: 220px;
+  }
+
+  .contact-hero-overlay h2 {
+    font-size: 17px;
+  }
+
+
+  /* =====================================
+     CONTACT
+  ===================================== */
+
+  .contact-section {
+    padding: 25px 10px 40px;
+  }
+
+  .contact-container {
+    gap: 18px;
+  }
+
+  .contact-info {
+    max-width: 100%;
+
+    padding: 18px 15px;
+  }
+
+  .contact-info h2 {
+    font-size: 20px;
+  }
+
+  .contact-icon {
+    width: 26px;
+
+    height: 26px;
+  }
+
+  .contact-icon i {
+    font-size: 13px;
+  }
+
+  .contact-text {
+    font-size: 12px;
+  }
+
+  .contact-text strong {
+    font-size: 12px;
+  }
+
+  .contact-text span {
+    font-size: 11px;
+  }
+
+
+  /* =====================================
+     FORM
+  ===================================== */
+
+  .inquiry-form {
+    padding: 18px 15px;
+  }
+
+  .inquiry-form h2 {
+    font-size: 20px;
+  }
+
+  .form-row label {
+    width: 65px;
+
+    font-size: 13px;
+  }
+
+  .form-row input {
+    height: 35px;
+
+    font-size: 12px;
+  }
+
+  .form-row textarea {
+    height: 75px;
+
+    font-size: 12px;
+  }
+
+  .contact-submit {
+    width: 115px;
+
+    height: 34px;
+
+    font-size: 13px;
+  }
+}
+
+/* =====================================================
+   FINAL UI POLISH - CLEAN COMPACT HERO
+   Existing colours and content are preserved.
+===================================================== */
+.contact-hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contact-hero-overlay {
+  top: 48px;
+  left: 6%;
+  width: min(340px, 38vw);
+}
+
+.contact-hero-overlay h2 {
+  font-size: 31px;
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    height: 300px;
+  }
+  .contact-hero-overlay {
+    top: 35px;
+    left: 22px;
+    width: 270px;
+  }
+  .contact-hero-overlay h2 {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,41 @@
+1.
+
+Name: Budesonide 200 mcg Inhaler
+Category: Respiratory Care
+Dosage: 1–2 inhalations twice daily, as prescribed
+Expire Date: 2027-06-30
+
+2.
+
+Name: Beclometasone 100 mcg Inhaler
+Category: Respiratory Care
+Dosage: 1–2 inhalations twice daily, as prescribed
+Expire Date: 2027-08-31
+
+3.
+
+Name: Ipratropium Bromide 20 mcg Inhaler
+Category: Respiratory Care
+Dosage: 2 inhalations, 3–4 times daily, as prescribed
+Expire Date: 2027-10-31
+
+4.
+
+Name: Montelukast 10 mg Tablets
+Category: Respiratory Care
+Dosage: 1 tablet once daily, usually in the evening
+Expire Date: 2028-01-31
+
+5.
+
+Name: Carbocisteine 250 mg/5 mL Oral Solution
+Category: Respiratory Care
+Dosage: As directed by the doctor or pharmacist
+Expire Date: 2027-12-31
+
+6.
+
+Name: Acetylcysteine 600 mg Effervescent Tablets
+Category: Respiratory Care
+Dosage: 1 tablet once daily, dissolved in water, as directed
+Expire Date: 2028-03-31

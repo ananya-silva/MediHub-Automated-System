@@ -1,0 +1,769 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Georgia, serif;
+
+  color: #222;
+
+  background-color: white;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.main-header {
+  width: 100%;
+
+  background-color: #299d82;
+
+  color: white;
+}
+
+
+/* Header top */
+
+.header-top {
+  width: 100%;
+
+  height: 85px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 8px 50px;
+
+  position: relative;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo-area {
+  width: 90px;
+
+  height: 75px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.logo-area img {
+  width: 70px;
+
+  height: 70px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   WEBSITE NAME
+========================================= */
+
+.brand-name {
+  position: absolute;
+
+  left: 50%;
+
+  top: 25px;
+
+  transform: translateX(-50%);
+}
+
+.brand-name h1 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 34px;
+
+  font-weight: normal;
+}
+
+
+/* =========================================
+   HEADER ACTIONS
+========================================= */
+
+.header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+/* Login/Register */
+
+.login-btn {
+  display: inline-block;
+
+  padding: 5px 19px;
+
+  border: 1px solid white;
+
+  border-radius: 20px;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: white;
+
+  color: #299d82;
+}
+
+
+/* Cart */
+
+.cart-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 28px;
+
+  transition: 0.3s;
+}
+
+.cart-icon:hover {
+  color: #e8f7f2;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navigation {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 5px 0 10px 92px;
+}
+
+.navigation a {
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 15px;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.navigation span {
+  color: white;
+}
+
+
+/* =========================================
+   ABOUT HERO
+========================================= */
+
+.about-hero {
+  width: 100%;
+
+  height: 650px;
+
+  background-image: url("images/about us.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+
+/* Hero overlay */
+
+.about-hero-overlay {
+  position: absolute;
+
+  top: 90px;
+
+  left: 0;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+
+/* Hero title */
+
+.about-hero-overlay h2 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 36px;
+
+  line-height: 1.15;
+
+  font-weight: normal;
+
+  text-shadow:
+    2px 2px 2px black,
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.about-section-title {
+  color: #299d82;
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================================
+   MEDIHUB DESCRIPTION
+========================================= */
+
+.about-description {
+  width: 100%;
+
+  background-color: white;
+}
+
+.description-content {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.description-content p {
+  margin: 0 0 15px;
+
+  color: #555;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   MISSION & VISION
+========================================= */
+
+.mission-vision {
+  width: 100%;
+
+  background-color: #f8fbff;
+}
+
+
+/* Mission & Vision cards */
+
+.info-card {
+  width: 100%;
+
+  min-height: 300px;
+
+  padding: 30px;
+
+  background-color: white;
+
+  border: 1px solid #e0e0e0;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+
+/* Card hover */
+
+.info-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   INFO ICON
+========================================= */
+
+.info-icon {
+  width: 60px;
+
+  height: 60px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #e8f7f2;
+
+  color: #299d82;
+
+  font-size: 25px;
+}
+
+
+/* =========================================
+   INFO CARD HEADING
+========================================= */
+
+.info-card h2 {
+  margin: 0 0 20px;
+
+  color: #299d82;
+
+  font-size: 25px;
+
+  font-weight: 600;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   INFO CARD TEXT
+========================================= */
+
+.info-card p {
+  margin: 0 0 15px;
+
+  color: #555;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  text-align: left;
+}
+
+.info-card p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   FOOTER
+   DO NOT CHANGE
+========================================= */
+
+.footer {
+  width: 100%;
+
+  background-color: #299d82;
+
+  color: white;
+
+  padding-top: 40px;
+}
+
+
+/* Footer content */
+
+.footer-content {
+  padding-bottom: 30px;
+}
+
+
+/* Footer columns */
+
+.footer-column {
+  color: white;
+}
+
+.footer-column p {
+  margin-bottom: 8px;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* Footer logo */
+
+.footer-column.address img {
+  width: 70px;
+
+  height: 70px;
+
+  object-fit: contain;
+
+  margin-bottom: 10px;
+}
+
+
+/* Copyright */
+
+.copyright {
+  width: 100%;
+
+  padding: 15px 10px;
+
+  text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media screen and (max-width: 991px) {
+
+  .header-top {
+    padding: 8px 30px;
+  }
+
+  .navigation {
+    padding-left: 40px;
+  }
+
+
+  /* Hero */
+
+  .about-hero {
+    height: 450px;
+  }
+
+  .about-hero-overlay {
+    top: 80px;
+  }
+
+
+  /* Description */
+
+  .description-content {
+    max-width: 850px;
+  }
+
+
+  /* Mission/Vision */
+
+  .info-card {
+    padding: 25px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 767px) {
+
+  /* =====================================
+     HEADER
+  ===================================== */
+
+  .header-top {
+    height: auto;
+
+    min-height: 80px;
+
+    padding: 8px 15px;
+  }
+
+  .logo-area {
+    width: 60px;
+
+    height: 60px;
+  }
+
+  .logo-area img {
+    width: 55px;
+
+    height: 55px;
+  }
+
+
+  /* Brand */
+
+  .brand-name {
+    position: static;
+
+    transform: none;
+
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  .brand-name h1 {
+    font-size: 25px;
+  }
+
+
+  /* Header actions */
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .login-btn {
+    padding: 5px 9px;
+
+    font-size: 11px;
+  }
+
+  .cart-icon {
+    font-size: 21px;
+  }
+
+
+  /* =====================================
+     NAVIGATION
+  ===================================== */
+
+  .navigation {
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    padding: 5px 10px 10px;
+
+    gap: 6px;
+  }
+
+  .navigation a {
+    font-size: 12px;
+  }
+
+
+  /* =====================================
+     ABOUT HERO
+  ===================================== */
+
+  .about-hero {
+    height: 280px;
+
+    background-position: center;
+  }
+
+  .about-hero-overlay {
+    top: 70px;
+  }
+
+  .about-hero-overlay h2 {
+    font-size: 29px;
+  }
+
+
+  /* =====================================
+     SECTION TITLE
+  ===================================== */
+
+  .about-section-title {
+    font-size: 28px;
+
+    margin-bottom: 25px;
+  }
+
+
+  /* =====================================
+     DESCRIPTION
+  ===================================== */
+
+  .about-description {
+    padding-top: 35px !important;
+
+    padding-bottom: 25px !important;
+  }
+
+  .description-content p {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+
+  /* =====================================
+     MISSION & VISION
+  ===================================== */
+
+  .mission-vision {
+    padding-top: 35px !important;
+
+    padding-bottom: 40px !important;
+  }
+
+  .info-card {
+    min-height: auto;
+
+    padding: 25px 20px;
+  }
+
+  .info-card h2 {
+    font-size: 23px;
+  }
+
+  .info-card p {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+
+  /* =====================================
+     FOOTER
+  ===================================== */
+
+  .footer {
+    padding-top: 30px;
+  }
+
+  .footer-content {
+    padding-bottom: 20px;
+  }
+
+  .footer-column {
+    text-align: left;
+  }
+
+  .footer-column p {
+    font-size: 13px;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media screen and (max-width: 500px) {
+
+  .about-hero {
+    height: 250px;
+  }
+
+  .about-hero-overlay {
+    top: 60px;
+  }
+
+  .about-hero-overlay h2 {
+    font-size: 26px;
+  }
+
+  .about-section-title {
+    font-size: 25px;
+  }
+
+  .info-card {
+    padding: 22px 18px;
+  }
+
+}
+
+/* =====================================================
+   FINAL UI POLISH - CLEAN COMPACT HERO
+   Existing colours and content are preserved.
+===================================================== */
+.about-hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.about-hero-overlay {
+  top: 55px;
+}
+
+.about-hero-overlay h2 {
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    height: 300px;
+  }
+  .about-hero-overlay {
+    top: 35px;
+    padding: 0 20px;
+  }
+  .about-hero-overlay h2 {
+    font-size: 27px;
+  }
+}

@@ -1,0 +1,30 @@
+MediHub Email Notifications
+
+The system now supports these patient email notifications:
+
+1. PATIENT LOGIN
+   - Every successful Patient login sends a login alert to the patient's registered email address.
+
+2. ORDER APPROVAL
+   - When a pharmacist changes an order status to Approved, the patient receives an approval email.
+
+3. ORDER REJECTION
+   - When a pharmacist changes an order status to Rejected, the patient receives a rejection email.
+
+4. LOW STOCK
+   - Existing low-stock alerts continue to notify active Admin and Pharmacist accounts.
+
+IMPORTANT - WAMP / LOCALHOST EMAIL SETUP
+----------------------------------------
+PHP mail() does not normally deliver real emails from a fresh WAMP installation.
+
+For actual email delivery, configure PHP SMTP/sendmail in php.ini, or install/configure an SMTP mail library such as PHPMailer.
+
+After configuring SMTP:
+1. Restart Apache from WAMP.
+2. Log in using a Patient account.
+3. Check the registered patient's inbox for the login alert.
+4. Change a pharmacist order from Pending/Processing to Approved or Rejected.
+5. Check the same patient's inbox for the order-status email.
+
+The application intentionally does not stop login/order processing if an email cannot be sent. Database functionality continues normally.

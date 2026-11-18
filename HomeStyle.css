@@ -1,0 +1,1776 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Georgia, serif;
+
+  color: #222;
+
+  background-color: white;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.main-header {
+  width: 100%;
+
+  background-color: #299d82;
+
+  color: white;
+}
+
+
+/* =========================================
+   HEADER TOP
+========================================= */
+
+.header-top {
+  width: 100%;
+
+  height: 85px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 8px 50px;
+
+  position: relative;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo-area {
+  width: 90px;
+
+  height: 75px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.logo-area img {
+  width: 70px;
+
+  height: 70px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   WEBSITE NAME
+========================================= */
+
+.brand-name {
+  position: absolute;
+
+  left: 50%;
+
+  top: 25px;
+
+  transform: translateX(-50%);
+}
+
+.brand-name h1 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 34px;
+
+  font-weight: normal;
+}
+
+
+/* =========================================
+   HEADER ACTIONS
+========================================= */
+
+.header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+/* Login */
+
+.login-btn {
+  display: inline-block;
+
+  padding: 5px 19px;
+
+  border: 1px solid white;
+
+  border-radius: 20px;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: white;
+
+  color: #299d82;
+}
+
+
+/* Cart */
+
+.cart-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 28px;
+
+  transition: 0.3s;
+}
+
+.cart-icon:hover {
+  color: #e8f7f2;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navigation {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 5px 0 10px 92px;
+}
+
+.navigation a {
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 15px;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.navigation span {
+  color: white;
+}
+
+
+/* =========================================
+   HOME HERO
+========================================= */
+
+.home-hero {
+  width: 100%;
+
+  height: 650px;
+
+  background-image: url("images/Home.png");
+
+  background-size: cover;
+
+  background-position: 58% center;
+
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+
+/* Hero Content */
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.48) 0%,
+    rgba(0, 0, 0, 0.18) 35%,
+    rgba(0, 0, 0, 0.00) 65%
+  );
+  pointer-events: none;
+}
+
+.hero-content {
+  position: absolute;
+  z-index: 1;
+
+  top: 55px;
+
+  left: 55px;
+
+  width: 320px;
+
+  text-align: center;
+}
+
+.hero-content h2 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 25px;
+
+  line-height: 1.15;
+
+  font-weight: normal;
+
+  text-shadow:
+    2px 2px 2px black,
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+
+/* =========================================
+   SEARCH & FILTER - CLEAN DESIGN
+========================================= */
+
+.search-section {
+    width: 100%;
+    padding: 45px 20px 55px;
+    background-color: #f3f7f6;
+}
+
+
+/* Main container */
+
+.search-section .container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* =========================================
+   SEARCH ROW
+========================================= */
+
+.search-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+
+/* Search box */
+
+.home-search-box {
+    width: 550px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+
+    border: 1px solid #d0d8d5;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s ease;
+}
+
+
+/* Menu icon */
+
+.home-search-box > i {
+    color: #299d82;
+    font-size: 18px;
+    margin-left: 16px;
+}
+
+
+/* Input */
+
+.home-search-box input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    padding: 0 14px;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+
+    color: #333;
+}
+
+
+.home-search-box input::placeholder {
+    color: #999;
+}
+
+
+/* Search button */
+
+.search-button {
+    width: 52px;
+    height: 52px;
+
+    border: none;
+    border-left: 1px solid #ddd;
+
+    background-color: white;
+
+    color: #222;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.search-button:hover {
+    background-color: #299d82;
+    color: white;
+}
+
+
+/* =========================================
+   UPLOAD PRESCRIPTION BUTTON
+========================================= */
+
+.upload-btn {
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 25px;
+
+    border-radius: 8px;
+
+    background-color: #299d82;
+    color: white;
+
+    font-family: Georgia, serif;
+    font-size: 16px;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+}
+
+
+.upload-btn:hover {
+    background-color: #21866f;
+    color: white;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   FILTER ROW
+========================================= */
+
+.search-filters {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-top: 22px;
+}
+
+
+/* Individual filter */
+
+.filter {
+    position: relative;
+
+    width: 600px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+
+    border: 1px solid #d0d8d5;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.04);
+}
+
+
+/* Manufacturer only */
+
+.search-filters .filter:nth-child(2) {
+    width: 350px;
+}
+
+
+/* Filter label */
+
+.filter label {
+    min-width: 105px;
+
+    padding-left: 15px;
+
+    color: #333;
+
+    font-family: Georgia, serif;
+    font-size: 15px;
+
+    white-space: nowrap;
+}
+
+
+/* Select */
+
+.filter select {
+    flex: 1;
+
+    height: 100%;
+
+    padding: 0 38px 0 8px;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+
+    color: #555;
+
+    font-family: Georgia, serif;
+    font-size: 15px;
+
+    cursor: pointer;
+
+    appearance: none;
+}
+
+
+/* Dropdown icon */
+
+.filter > i {
+    position: absolute;
+
+    right: 14px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #299d82;
+
+    font-size: 14px;
+
+    pointer-events: none;
+}
+
+
+/* Focus */
+
+.filter:focus-within {
+    border-color: #299d82;
+
+    box-shadow:
+        0 0 0 2px rgba(41, 157, 130, 0.12);
+}
+
+
+.home-search-box:focus-within {
+    border-color: #299d82;
+
+    box-shadow:
+        0 0 0 2px rgba(41, 157, 130, 0.12);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media screen and (max-width: 767px) {
+
+    .search-section {
+        padding: 35px 15px 45px;
+    }
+
+    .search-container {
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 12px;
+    }
+
+
+    .home-search-box {
+        width: 100%;
+        height: 48px;
+    }
+
+
+    .search-button {
+        height: 48px;
+        width: 48px;
+    }
+
+
+    .upload-btn {
+        width: 100%;
+        height: 48px;
+    }
+
+
+    .search-filters {
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 12px;
+
+        margin-top: 15px;
+    }
+
+
+    .filter {
+        width: 100%;
+        height: 48px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media screen and (max-width: 500px) {
+
+    .search-section {
+        padding: 30px 10px 40px;
+    }
+
+
+    .home-search-box {
+        height: 45px;
+    }
+
+
+    .home-search-box input {
+        font-size: 14px;
+    }
+
+
+    .search-button {
+        width: 45px;
+        height: 45px;
+        font-size: 17px;
+    }
+
+
+    .upload-btn {
+        height: 45px;
+        font-size: 14px;
+    }
+
+
+    .filter {
+        height: 45px;
+    }
+
+
+    .filter label {
+        min-width: 95px;
+        font-size: 13px;
+    }
+
+
+    .filter select {
+        font-size: 13px;
+    }
+
+}
+/* =========================================
+   FEATURED MEDICINES
+========================================= */
+
+.featured-section {
+  width: 100%;
+
+  padding: 40px 0 80px;
+
+  background-color: #f8fbff;
+}
+
+.featured-section .container {
+  max-width: 1140px;
+}
+
+.featured-title {
+  color: #299d82;
+
+  font-size: 32px;
+  font-weight: 700;
+
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+
+/* Upload Button */
+
+.upload-btn {
+  height: 45px;
+
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: #299d82;
+
+  color: white;
+
+  font-family: Georgia, serif;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #21866f;
+}
+
+
+/* =========================================
+   SEARCH FILTERS
+========================================= */
+
+.search-filters {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  width: 90%;
+
+  max-width: 900px;
+
+  margin: 15px auto 0;
+}
+
+.filter {
+  flex: 0 1 280px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 15px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  background-color: white;
+
+  color: #555;
+
+  font-family: Georgia, serif;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.filter i {
+  color: #299d82;
+}
+
+
+/* =========================================
+   FEATURED MEDICINES
+========================================= */
+
+.featured-section {
+  width: 100%;
+
+  padding: 45px 0 65px;
+
+  background-color: #f8fbff;
+}
+
+.featured-title {
+  color: #299d82;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================================
+   MEDICINE CARD
+========================================= */
+
+.medicine-card {
+  background-color: white;
+
+  border-radius: 12px;
+
+  padding: 18px;
+
+  text-align: center;
+
+  border: 1px solid #e0e0e0;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.medicine-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Medicine Image */
+
+.medicine-image {
+  width: 100%;
+
+  height: 160px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 12px;
+}
+
+.medicine-image img {
+  max-width: 100%;
+
+  max-height: 150px;
+
+  object-fit: contain;
+
+  border-radius: 8px;
+}
+
+
+/* Medicine Text */
+
+.medicine-card h3 {
+  font-size: 18px;
+
+  font-weight: 600;
+
+  color: #222;
+
+  margin-bottom: 8px;
+}
+
+.medicine-card p {
+  color: #666;
+
+  font-size: 14px;
+
+  margin-bottom: 7px;
+}
+
+.medicine-card strong {
+  display: block;
+
+  color: #299d82;
+
+  font-size: 18px;
+
+  margin: 8px 0;
+}
+
+.stock {
+  color: #198754 !important;
+
+  font-weight: 500;
+}
+
+
+/* Details Button */
+
+.details-btn {
+  border: none;
+
+  background-color: #299d82;
+
+  color: white;
+
+  padding: 9px 22px;
+
+  border-radius: 8px;
+
+  font-family: Georgia, serif;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.details-btn:hover {
+  background-color: #21866f;
+}
+
+
+/* =========================================
+   CAROUSEL
+========================================= */
+
+#medicineCarousel {
+  padding: 0 70px 55px;
+}
+
+
+/* Carousel Arrows */
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 45px;
+
+  height: 45px;
+
+  top: 45%;
+
+  transform: translateY(-50%);
+
+  background-color: #299d82;
+
+  border-radius: 50%;
+
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: 5px;
+}
+
+.carousel-control-next {
+  right: 5px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #21866f;
+}
+
+
+/* Carousel Indicators */
+
+.carousel-indicators {
+  bottom: 0;
+}
+
+.carousel-indicators button {
+  background-color: #299d82;
+
+  width: 9px;
+
+  height: 9px;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.services-section {
+  width: 100%;
+
+  padding: 45px 0 60px;
+
+  background-color: white;
+}
+
+
+/* Services Title */
+
+.services-title {
+  color: #299d82;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  margin: 0 0 30px;
+}
+
+
+/* Service Card */
+
+.service-card {
+  width: 100%;
+
+  min-height: 240px;
+
+  padding: 18px;
+
+  text-align: center;
+
+  background-color: white;
+
+  border: 1px solid #e0e0e0;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* Card Hover */
+
+.service-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Service Heading */
+
+.service-card h3 {
+  width: 100%;
+
+  min-height: 42px;
+
+  margin: 0 0 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #333;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+
+/* Service Image */
+
+.service-card img {
+  width: 100%;
+
+  max-width: 170px;
+
+  height: 140px;
+
+  object-fit: contain;
+
+  border-radius: 8px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media screen and (max-width: 991px) {
+
+  .header-top {
+    padding: 8px 25px;
+  }
+
+  .navigation {
+    padding-left: 30px;
+  }
+
+  .search-area {
+    width: 95%;
+  }
+
+  .search-filters {
+    width: 95%;
+  }
+
+  .service-card {
+    min-height: 230px;
+
+    padding: 15px;
+  }
+
+  .service-card h3 {
+    font-size: 16px;
+  }
+
+  .service-card img {
+    max-width: 160px;
+
+    height: 130px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 767px) {
+
+  /* Header */
+
+  .header-top {
+    height: auto;
+
+    min-height: 80px;
+
+    padding: 8px 15px;
+  }
+
+  .logo-area {
+    width: 60px;
+
+    height: 60px;
+  }
+
+  .logo-area img {
+    width: 55px;
+
+    height: 55px;
+  }
+
+  .brand-name {
+    position: static;
+
+    transform: none;
+
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  .brand-name h1 {
+    font-size: 25px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .login-btn {
+    padding: 5px 9px;
+
+    font-size: 11px;
+  }
+
+  .cart-icon {
+    font-size: 21px;
+  }
+
+
+  /* Navigation */
+
+  .navigation {
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    padding: 5px 10px 10px;
+
+    gap: 6px;
+  }
+
+  .navigation a {
+    font-size: 12px;
+  }
+
+
+  /* Hero */
+
+  .home-hero {
+    height: 280px;
+
+    background-position: center;
+  }
+
+  .hero-content {
+    top: 30px;
+
+    left: 20px;
+
+    width: 240px;
+  }
+
+  .hero-content h2 {
+    font-size: 18px;
+  }
+
+
+  /* Search */
+
+  .home-search-section {
+    padding: 35px 15px 45px;
+  }
+
+  .section-title {
+    font-size: 25px;
+
+    margin-bottom: 20px;
+  }
+
+  .search-area {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    width: 100%;
+
+    gap: 10px;
+  }
+
+  .home-search-box {
+    width: 100%;
+
+    max-width: none;
+
+    height: 45px;
+  }
+
+  .upload-btn {
+    width: 100%;
+
+    height: 45px;
+  }
+
+  .search-filters {
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 10px;
+  }
+
+  .filter {
+    width: 100%;
+
+    flex: none;
+  }
+
+
+  /* Featured Medicines */
+
+  .featured-section {
+    padding: 35px 10px 50px;
+  }
+
+  .featured-title {
+    font-size: 25px;
+  }
+
+  #medicineCarousel {
+    padding: 0 45px 50px;
+  }
+
+  .medicine-card {
+    margin: 0 auto;
+
+    padding: 12px;
+  }
+
+  .medicine-image {
+    height: 100px;
+  }
+
+  .medicine-image img {
+    max-height: 95px;
+  }
+
+  .medicine-card h3 {
+    font-size: 14px;
+  }
+
+  .medicine-card p {
+    font-size: 12px;
+  }
+
+  .medicine-card strong {
+    font-size: 15px;
+  }
+
+  .details-btn {
+    padding: 8px 15px;
+
+    font-size: 11px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+
+    height: 40px;
+  }
+
+
+  /* Services */
+
+  .services-section {
+    padding: 35px 10px 45px;
+  }
+
+  .services-title {
+    font-size: 25px;
+
+    margin-bottom: 25px;
+  }
+
+  .service-card {
+    min-height: 210px;
+
+    padding: 12px;
+  }
+
+  .service-card h3 {
+    font-size: 14px;
+  }
+
+  .service-card img {
+    height: 100px;
+  }
+
+}
+
+
+/* =========================================
+   EXTRA SMALL MOBILE
+========================================= */
+
+@media screen and (max-width: 500px) {
+
+  .brand-name h1 {
+    font-size: 22px;
+  }
+
+  .login-btn {
+    font-size: 10px;
+
+    padding: 4px 7px;
+  }
+
+  .cart-icon {
+    font-size: 19px;
+  }
+
+  .navigation a {
+    font-size: 11px;
+  }
+
+
+  /* Hero */
+
+  .home-hero {
+    height: 240px;
+  }
+
+  .hero-content {
+    left: 20px;
+
+    top: 30px;
+
+    width: 220px;
+  }
+
+  .hero-content h2 {
+    font-size: 17px;
+  }
+
+
+  /* Search */
+
+  .home-search-section {
+    padding: 30px 10px 40px;
+  }
+
+  .section-title {
+    font-size: 23px;
+  }
+
+  .home-search-box {
+    height: 42px;
+  }
+
+  .upload-btn {
+    height: 42px;
+
+    font-size: 12px;
+  }
+
+
+  /* Medicine Cards */
+
+  #medicineCarousel {
+    padding: 0 40px 45px;
+  }
+
+  .medicine-card {
+    padding: 8px;
+  }
+
+  .medicine-image {
+    height: 80px;
+  }
+
+  .medicine-image img {
+    max-height: 75px;
+  }
+
+  .medicine-card h3 {
+    font-size: 11px;
+  }
+
+  .medicine-card p {
+    font-size: 10px;
+  }
+
+  .medicine-card strong {
+    font-size: 12px;
+  }
+
+  .details-btn {
+    padding: 6px 10px;
+
+    font-size: 9px;
+  }
+
+
+  /* Services */
+
+  .services-section {
+    padding: 30px 10px 40px;
+  }
+
+  .services-title {
+    font-size: 23px;
+  }
+
+  .service-card {
+    min-height: 180px;
+
+    padding: 8px;
+  }
+
+  .service-card h3 {
+    font-size: 11px;
+  }
+
+  .service-card img {
+    height: 75px;
+  }
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  width: 100%;
+
+  background-color: #299d82;
+
+  color: white;
+}
+
+.footer-content {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 0;
+
+  padding: 18px 30px;
+}
+
+.footer-column {
+  min-height: 75px;
+
+  padding: 0 25px;
+
+  border-left: 1px solid white;
+}
+
+.footer-column:first-child {
+  border-left: none;
+}
+
+.footer-column p {
+  margin: 2px 0;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.address {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.address img {
+  width: 60px;
+
+  height: 60px;
+
+  object-fit: contain;
+}
+
+.copyright {
+  width: 100%;
+
+  padding: 8px 10px 14px;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   FOOTER RESPONSIVE
+========================================= */
+
+@media screen and (max-width: 800px) {
+
+  .header-top {
+    padding: 8px 25px;
+  }
+
+  .navigation {
+    padding-left: 30px;
+  }
+
+  .services-container {
+    flex-wrap: wrap;
+  }
+
+  .service-card {
+    width: 45%;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .header-top {
+    height: auto;
+
+    min-height: 80px;
+
+    padding: 8px 15px;
+  }
+
+  .logo-area {
+    width: 60px;
+  }
+
+  .logo-area img {
+    width: 55px;
+
+    height: 55px;
+  }
+
+  .brand-name {
+    position: static;
+
+    transform: none;
+
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  .brand-name h1 {
+    font-size: 25px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .login-btn {
+    padding: 5px 9px;
+
+    font-size: 11px;
+  }
+
+  .cart-icon {
+    font-size: 21px;
+  }
+
+  .navigation {
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    padding: 5px 10px 10px;
+
+    gap: 6px;
+  }
+
+  .navigation a {
+    font-size: 12px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 15px 20px;
+  }
+
+  .footer-column {
+    width: 100%;
+
+    padding: 15px 0;
+
+    border-left: none;
+
+    border-top: 1px solid white;
+  }
+
+  .footer-column:first-child {
+    border-top: none;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
+}
+
+/* =====================================================
+   FINAL UI POLISH - CLEAN REAL-WORLD PHARMACY LAYOUT
+   Keeps the existing colours, content and functionality.
+===================================================== */
+.home-hero {
+  height: 420px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero-content {
+  top: 48px;
+  left: 6%;
+  width: min(330px, 38vw);
+}
+
+.hero-content h2 {
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.featured-section {
+  background: #f8fbff;
+}
+
+.featured-section .container {
+  max-width: 1080px;
+}
+
+.medicine-card {
+  padding: 16px;
+  border-radius: 14px;
+  height: 100%;
+}
+
+.medicine-image {
+  height: 125px;
+  margin-bottom: 10px;
+  padding: 8px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.medicine-image img {
+  max-width: 82%;
+  max-height: 112px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    height: 320px;
+    background-position: center center;
+  }
+  .hero-content {
+    top: 30px;
+    left: 22px;
+    width: 270px;
+  }
+  .hero-content h2 {
+    font-size: 21px;
+  }
+}
+
+
+/* =====================================================
+   HERO BANNER - BETTER FACE VISIBILITY
+===================================================== */
+
+@media screen and (max-width: 1100px) {
+  .home-hero {
+    background-position: 62% center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home-hero {
+    height: 520px;
+    background-position: 67% center;
+  }
+
+  .hero-content {
+    top: 45px;
+    left: 20px;
+    width: 290px;
+  }
+
+  .hero-content h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-hero {
+    height: 470px;
+    background-position: 70% center;
+  }
+
+  .hero-content {
+    top: 35px;
+    left: 12px;
+    width: 250px;
+  }
+
+  .hero-content h2 {
+    font-size: 20px;
+  }
+}

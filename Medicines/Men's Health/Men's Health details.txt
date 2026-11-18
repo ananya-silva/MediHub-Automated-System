@@ -1,0 +1,41 @@
+1.
+
+Name: Tamsulosin 0.4 mg Capsules
+Category: Men's Health
+Dosage: 1 capsule once daily after a meal
+Expire Date: 2027-06-30
+
+2.
+
+Name: Finasteride 5 mg Tablets
+Category: Men's Health
+Dosage: 1 tablet once daily
+Expire Date: 2027-08-31
+
+3.
+
+Name: Dutasteride 0.5 mg Capsules
+Category: Men's Health
+Dosage: 1 capsule once daily
+Expire Date: 2027-10-31
+
+4.
+
+Name: Sildenafil 50 mg Tablets
+Category: Men's Health
+Dosage: 1 tablet as directed, usually before sexual activity
+Expire Date: 2028-01-31
+
+5.
+
+Name: Tadalafil 10 mg Tablets
+Category: Men's Health
+Dosage: 1 tablet as directed before sexual activity
+Expire Date: 2027-12-31
+
+6.
+
+Name: Zinc Sulfate 220 mg Tablets
+Category: Men's Health
+Dosage: 1 tablet once daily
+Expire Date: 2028-03-31
